@@ -20,3 +20,20 @@ small,.muted{color:var(--sub)}
 .tabs [aria-current=page]{border-bottom-color:var(--blue);font-weight:750;color:var(--blue)}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 218px;gap:28px;margin:24px 0}
 .frame{background:#fff;border:1px solid #ccd4d9;align-self:start;overflow:hidden}
+.appbar{display:flex;align-items:center;gap:17px;padding:11px 24px;border-bottom:1px solid var(--line);font-size:12px}
+.appbar .logo{margin-right:auto;font-size:23px}
+.appbar .active{font-weight:750;color:var(--blue)}
+.screen{padding:23px}
+.hero{min-height:214px;color:white;background-color:#486879;background-size:cover;background-position:center 58%;display:flex;flex-direction:column;justify-content:flex-end;padding:24px 28px}
+.hero b{font-size:clamp(25px,2.8vw,42px);letter-spacing:-.065em;line-height:1.23}
+.hero span{font:13px Consolas,monospace;margin-bottom:5px}
+.hero small{color:white;font-size:11px;margin-top:8px}
+.label{display:block;font-size:12px;color:var(--sub);margin-bottom:3px}
+.flightform{display:grid;grid-template-columns:1fr 1fr 1.2fr auto;gap:10px;align-items:end;margin:12px 0 18px}
+.cell{padding:9px 12px;border:1px solid var(--line);min-height:57px}
+.cell b,.right b{white-space:nowrap}
+.action,.ghost,.chip{border:1px solid var(--line);padding:9px 15px;min-height:44px;background:white;font-weight:700}
+.action{background:var(--blue);color:white;border-color:var(--blue)}
+.ghost{color:var(--blue)}
+.chip{min-height:36px;padding:5px 12px;font-size:13px}
+.chip.on{background:var(--ink);color:white;border-color:var(--ink)}
