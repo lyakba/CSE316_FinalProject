@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<html lang = "eng">
+<html lang = "en">
     <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
         <title>
             ReSky  |  Interactive booking prototype
         </title>
-        <link rel = 'stylesheet' href="styles.css">
+
+        <link rel = "stylesheet" href = "styles.css">
+        <script src = "app.js" defer></script>
     </head>
+
     <body>
         <div class = "wrap">
-            <header class="mast"><b class="logo">ReSky</b><span>Interactive booking prototype</span><button class="chip edition" data-action="reset">Reset demo ↺</button></header>
+            <header class = "mast">
+                <b class = "logo">ReSky</b>
+
+                <span>
+                    Interactive booking prototype
+                </span>
+
+                <button class = "chip edition" data-action = "reset">
+                    Reset demo ↺
+                </button>
+            </header>
+
+            <main>
+                <div class = "title">
+                    <h1>
+                        Booking a round trip
+                    </h1>
+
+                    <p>
+                        Two passengers, Incheon to Tokyo.
+                        Choose a flight to walk through the booking screens.
+                    </p>
+                </div>
+
+                <nav class = "tabs" aria-label = "Review screens"></nav>
+
+                <div class = "layout">
+                    <article class = "frame" aria-label = "Screen preview">
+                        <header class = "appbar">
+                            <b class = "logo">ReSky</b>
+
+                            <button class = "navlink active" data-action = "page-0">
+                                Flights
+                            </button>
+
+                            <button class = "navlink" data-action = "bookings">
+                                My bookings
+                            </button>
+
+                            <span class = "badge">
+                                Demo
+                            </span>
+                        </header>
+
+                        <div id = "view" aria-live = "polite"></div>
+                    </article>
+
+                    <aside class = "side"></aside>
+                </div>
+            </main>
+
+            <footer>
+                Interactive design sample with fictional fares.
+                Browser-only prototype. No real reservations or payments are made.
+                Reset demo to start again.
+                Lake Kawaguchi photograph by Filipe Freitas, Unsplash.
+            </footer>
         </div>
     </body>
 </html>
